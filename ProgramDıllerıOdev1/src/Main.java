@@ -13,7 +13,7 @@ public class Main {
 		System.out.println("Cümlenizi Giriniz");
 		String Cumle=scan.nextLine();
 		Cumle=Cumle.trim();
-		String[] Kelime = Cumle.split(" +");
+		String[] Kelime = Cumle.split("\\s+");
 		if((Kelime.length==3) && contains(ozne , Kelime[0])&&contains(nesne , Kelime[1])&& contains(yuklem , Kelime[2])) {
 			System.out.println("EVET");
 		}
